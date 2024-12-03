@@ -1,8 +1,15 @@
-table {
-    border-style: solid;
-    border-color: red;
+body{
+    height:100%;
+    width:100%
 }
-tr {
-    border-style: solid;
-    border-color: red;
+
+table{
+    height:100%;
+    width:100%;
+}
+table,td {
+    text-align: center;
+    border-style: groove;
+    border-color: black;
+    border
 }
