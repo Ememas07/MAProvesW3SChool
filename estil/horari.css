@@ -1,27 +1,8 @@
-html{
-    background-size: cover;
-    background-color: black;
+table {
+    border-style: solid;
+    border-color: red;
 }
-
-
-
-body{
-    background-image:url(../Imatges/foto1.png);
-    background-position: bottom;
-    color:White
-}
-
-h1{
-    color:red
-
-
-}
-
-
-#Asfalt{
-    color:blue
-
-
-
-
+tr {
+    border-style: solid;
+    border-color: red;
 }
