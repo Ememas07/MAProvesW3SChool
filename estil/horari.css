@@ -1,0 +1,27 @@
+html{
+    background-size: cover;
+    background-color: black;
+}
+
+
+
+body{
+    background-image:url(../Imatges/foto1.png);
+    background-position: bottom;
+    color:White
+}
+
+h1{
+    color:red
+
+
+}
+
+
+#Asfalt{
+    color:blue
+
+
+
+
+}
