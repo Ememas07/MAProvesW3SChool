@@ -1,15 +1,18 @@
-body{
-    height:100%;
-    width:100%
-}
-
-table{
+body,table{
     height:100%;
     width:100%;
+    background-image:url(../Imatges/FotosMarc/foto12.png);
+    background-size:100%;
+    opacity: 0.95;
 }
-table,td {
+table,td,th {
+    background-color: white;
+    border-collapse: collapse;
     text-align: center;
-    border-style: groove;
+    border-style: solid;
     border-color: black;
-    border
+    border-width: 1px;
+}
+#doble{
+    background-color:powderblue
 }
