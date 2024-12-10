@@ -1,7 +1,8 @@
 body,table{
+    align-items: center;
     height:100%;
     width:100%;
-    background-image:url(../Imatges/FotosMarc/foto12.png);
+    background-image:url(../Imatges/FotosCotxes/foto12.png);
     background-size:100%;
     opacity: 0.95;
 }
