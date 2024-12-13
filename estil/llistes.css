@@ -5,10 +5,14 @@ body{
     background-size:cover;
 }
 ul{
-    color:green;
+    color:white;
     list-style:square;
 }
-h2{
+h3{
     color:red;
-    list-style:lower-roman;
 }
+.titol{
+    list-style:upper-roman;
+    color:green;
+}
+
