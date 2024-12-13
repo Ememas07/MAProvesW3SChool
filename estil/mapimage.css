@@ -1,8 +1,34 @@
 html{
-    background-size: cover;
+    width:100%;
     background-color: black;
 }
 body{
-    
     color:White
+}
+.imagemap{
+    width:100%;
+}
+section{
+    margin-top:20px;
+}
+
+.fotoasfalt{
+    background-image:url(../Imatges/FotosMapImage/fotoasfalt.png);
+    width:100%;
+    height:auto;
+}
+.fotosol{
+    background-image:url(../Imatges/FotosMapImage/fotosol.png);
+    width:100%;
+    height:auto;
+}
+.foto296{
+    background-image:url(../Imatges/FotosMapImage/foto296.png);
+    width:100%;
+    height:auto;
+}
+.fotosunset{
+    background-image:url(../Imatges/FotosMapImage/fotosunset.png);
+    width:100%;
+    height:auto;
 }
