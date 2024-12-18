@@ -12,3 +12,6 @@ section{
     width:100%;
     height:auto;
 }
+img#imagemap {
+    margin-top: auto; /* Adjust this value to the height of your navbar */
+}
