@@ -1,0 +1,23 @@
+body,table{
+    align-items: center;
+    height:100%;
+    width:100%;
+    background-image:url(../Imatges/FotosCotxes/foto12.png);
+    background-size:100%;
+    opacity: 0.95;
+}
+table,td,th {
+    background-color: white;
+    border-collapse: collapse;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+.doble{
+    background-color:powderblue
+}
+.pati{
+    background-color:crimson;
+    color:white;
+}
