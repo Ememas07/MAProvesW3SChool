@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>menú vertical</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+   /* reduïm el marge intern i treiem decoració de la llista */
+   ul {
+      padding:5px;
+      list-style-type : none;
+   }
+   /*amplada del menú */
+   ul#menu {
+       width:15em;
+   }   
+   /* vores dels primers nivells */
+   ul#menu>li{
+       border-bottom: dashed black medium;
+       border-left: dashed black medium;
+       border-right: dashed black medium;
+   }   
+   ul#menu>li:first-child{
+       border-top: dashed black medium;
+   }   
+   /* color del primer nivell */
+   ul>li {
+       background-color:red;
+   }   
+   /* color del segon nivell */
+   ul>li>ul>li {
+       background-color:green;
+   }   
+   /* color del primer nivell quan passem pel damunt */
+   ul>li:hover {
+       background-color:blue;
+   }   
+   /* color del segon nivell quan passem pel damunt */
+   ul>li>ul>li:hover {
+       background-color:purple;
+   }   
+   /* fem que els enllaços siguin de tipus bloc i els posem farciment */
+   ul li a{
+      display:block;
+      padding:0 3px 3px 3px;
+   }   
+   /* estètica dels enllaços */
+   ul#menu a:link, ul#menu a:visited{
+      color: white;
+      text-decoration: none;
+      font-family: monospace;
+   }   
+   /* quan passem per damunt d'un enllaç, posem lletra negreta */
+   ul#menu a:hover{
+      font-weight: bold;
+   }
+  </style>
+</head>
+<body>
+<ul id="menu">
+  <li><a href="">Inici</a></li>
+  <li><a href="">Qui som</a>
+    <ul>
+      <li><a href="">Presentació</a></li>
+      <li><a href="">On estem </a></li>
+      <li><a href="">Contacta</a></li>
+    </ul>
+  </li>
+  <li><a href="">Què fem</a>
+    <ul>
+      <li><a href="">Els nostres projectes</a></li>
+      <li><a href="">Els nostres tallers</a></li>
+    </ul>
+  </li>
+  <li><a href="">Enllaços</a></li>
+</ul>
+</body>
+</html>

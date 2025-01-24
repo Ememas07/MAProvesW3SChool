@@ -1,0 +1,118 @@
+/* Propietats genèriques per a tot el <body> */
+body {
+   /* Centrem el body, per poder centrar els divs (ho fem per IE) */
+   text-align: center ;
+   /* Color de fons del la web */
+   background-color:#FFC7FC;
+   /* Color de lletra */
+   color: #58014B;
+   /* Tipus de lletra */
+   font: small sans-serif;
+   /*Treiem marges*/
+   margin: 0;
+}
+
+/* Contenidor que ho engloba tot (capçalera, columnes i peu) */
+#contenidor{
+   /* El contingut de la web ocuparà el 80% d'amplada de la finestra*/
+   width: 80%;
+   /* Cenrtem el contenidor */
+   margin: 0px auto;
+   /* Text alineat a l'esquerra */
+   text-align: left;
+   /* Fons de color blanc */
+   background-color:white;
+}
+
+/* Capçalera i peu de pàgina*/
+#cap, #peu{
+  /* Imatge de fons de la capçalera */
+  background-image: url("../imatges/banner-web.png");
+  /* Text centrat */
+  text-align:center;
+  /* Lletra negreta */
+  font-weight: bold;
+  /* Color de lletra */
+   color:white;
+}
+
+#peu {
+   /* Mida de la lletra */
+   font-size: small;
+   /* Centrem la lletra */
+   text-align: center;
+   /* Treiem qualsevol element flotant que pugui tenir, per exemple el menú... */
+   clear: both ;
+}
+
+#cap h1, #cap h2{
+   /* Treiem el marge dels encapçalaments */
+   margin:0;
+}
+
+
+/* Columna esquerra */
+#lateral {
+   /* amplada de la columna lateral del menú */
+   width: 15% ;
+   /* El menú quedarà flotant a l'esquerra */
+   float: left ;
+}
+
+/* Columna dreta */
+#cos {
+   /* Posem de marge del cos de la web tant com ocupa la columna esquerra */
+   margin-left: 15% ;
+   padding-left: 1em ;
+}
+
+/* Encapçalaments */
+h1{
+  /* Mida de la lletra*/
+  font-size: 5em;
+}
+
+h2{
+  /* Mida de la lletra*/
+  font-size: 4em;
+}
+
+/* Menú */
+
+#menu ul {
+   /*Treiem el tipus de llista */
+   list-style-type: none ;
+   /* Treiem marges i farciments */
+   margin: 0;
+   padding: 0;
+   /* Posem una vora al menú */
+   border: thick solid #D68EFF;
+}
+
+#menu ul li {
+   /* Color de fons de cada ítem del menú */
+   background-color: #B20298;
+}
+
+/* Enllaços del menú */
+#menu ul li a {
+   /* Color de lletra */
+   color: white ;
+   /* Treiem el subratllat */
+   text-decoration: none ;
+   /* Sempre sortiran les paraules en majúscules */
+   text-transform: uppercase ;
+   /* Per tal que l'enllaç ocupi tota la línia */
+   display: block ;
+   /* posem farciment */
+   padding: 0.2em 0.2em 0.2em 0.4em ;
+}
+
+#menu ul li a:hover {
+   /* Quan passem pel damunt, canviem el color de fons */
+   background: #CC4ABD;
+   /* Quan passem pel damunt, posem una vora esquerra */
+   border-left: 0.3em solid #58014B;
+   /* Quan passem pel damunt, canviem el color de lletra */
+   color: #58014B;
+}

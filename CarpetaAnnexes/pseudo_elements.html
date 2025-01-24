@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>pseudo-elements</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+    p.pf:before { content: "Paràgraf: "; }
+    p.pf:after { content: url("imatges/firefox.png"); }
+    p.ll { width: 20em; }
+    p.ll:first-line { font-weight:bold; }
+    p.ll:first-letter {float: left; font-size: 300%; font-family:monospace; }
+  </style>
+</head>
+<body>
+  <p class="pf">Això és un paràgraf </p>
+  <p class="pf">Això també és un paràgraf </p>
+  <p class="ll">Això és un paràgraf d'amplada 20em on la primera lletra és molt gran i la primera
+  línia està en negreta...</p>
+</body>
+</html>

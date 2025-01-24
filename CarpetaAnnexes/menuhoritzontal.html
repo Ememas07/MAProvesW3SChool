@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>menú horitzontal</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+   /* treiem el marge intern i treiem decoració de la llista */
+   ul {
+       padding:0;
+       list-style-type : none;
+   }
+   /* amplada del menú */
+   ul#menu {
+       width:300px;
+   }
+   /* provoquem que el menú sigui horitzontal */
+   li {
+       float:left;
+   }
+   /* vores i color per defecte */
+   ul>li {
+       color:white;
+       background-color:#213240;
+       /* Atenció! Posem propietats no estàndard per arrodonir les vores */
+       /* només es veurà rodó des de Firefox */
+       -moz-border-radius-topright:10px;
+       -moz-border-radius-topleft:10px;
+   }
+   /* fem que els enllaços siguin de tipus bloc i els posem farciment */
+   ul li a{
+      padding:3px 20px 3px 20px;
+      display:block;
+   }
+   /* estètica dels enllaços */
+   ul>li a:link, ul>li a:visited {
+       color:white;
+       text-decoration:none;
+   }
+   /* color de la pestanya quan passem pel damunt */
+   ul>li:hover {
+       background-color:#90AEC6;
+       color:black;
+   }
+   /* propietats de la zona d'escriptura de prova*/
+   div {
+       width:500px;
+       height:400px;
+       background-color:#90AEC6;
+       clear:both;
+       margin-top:-10px;
+       border-radius-topright:10px;
+       border-radius-bottomleft:10px;
+       border-radius-bottomright:10px;
+   }
+  </style>
+</head>
+<body>
+   <ul>
+      <li><a href="">Inici</a></li>
+      <li><a href="">Qui som</a></li>
+      <li><a href="">Què fem</a></li>
+      <li><a href="">Enllaços</a></li>
+   </ul>
+</body>
+</html>

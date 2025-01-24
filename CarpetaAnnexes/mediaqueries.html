@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Media Querie</title>
+	<style>
+		#quadre1 {
+			width: 100px;
+			height: 100px;
+			background-color: coral;
+			margin: 10px;
+			float: left;
+		}
+		#quadre2 {
+			width: 100px;
+			height: 100px;
+			background-color: coral;
+			margin: 10px;
+			float: right;			
+		}
+		@media all and (min-width:600px){
+			#contenidor{
+				width:600px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="contenidor">
+		<div id="quadre1"></div>
+		<div id="quadre2"></div>
+	</div>
+</body>
+</html>

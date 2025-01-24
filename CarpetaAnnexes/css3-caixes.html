@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Caixes amb CSS3</title>
+<style type="text/css">
+   div.bloc { border-color: #CD1C7E; clear:both; }
+   h1 { background-color: #CD1C7E; }
+   h2 { color: #CD1C7E; }
+   p {
+      border: 2px #CD1C7E solid;
+      padding: 10px;
+      width: 25%;
+      margin-right: 50px;
+      float: left;    
+   }
+   p.arrodonit1 { border-radius: 30px; }
+   p.arrodonit2 { 
+      border: 2px #CD1C7E solid;  
+      border-top-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+   }   
+   p.ombres { margin-bottom: 50px; }
+   p.ombres1 { box-shadow: 20px 20px gray; }
+   p.ombres2 { box-shadow: 20px 20px 5px gray; }
+   p.ombres3 { box-shadow: 20px 20px 5px 15px gray; }
+   p.ombres4 { box-shadow: 20px 20px 5px 5px gray inset; } 
+   p.redimensio { overflow:auto; }
+   p.redimensio1 { resize: horizontal; }  
+   p.redimensio2 { resize: vertical; }
+   p.redimensio3 { resize: both; }
+</style>
+</head>
+<body>
+<h1>Caixes amb CSS3</h1>
+<div class="bloc">
+  <h2>Vores arrodonides</h2>
+  <p class="arrodonit1">Paràgraf amb vora arrodonida de radi 25px.</p>
+  <p class="arrodonit2">Paràgraf amb les vores superior esquerra i inferior dreta
+  arrodonides amb un radi de 30px.</p>  
+</div>
+<div class="bloc">
+  <h2>Ombres</h2>
+  <p class="ombres ombres1">Paràgraf amb ombra gris posicionada a 20px cap a baix i cap a la
+  dreta.</p>
+  <p class="ombres ombres2">Paràgraf amb ombra gris posicionada a 20px cap a baix i cap a la dreta i
+  amb una borrositat de 5px a la vora.</p>
+  <p class="ombres ombres3">Paràgraf amb ombra gris posicionada a 20px cap a baix i cap a la dreta,
+  amb una borrositat de 5px a la vora i una mida de 15px.</p>
+  <p class="ombres ombres4">Paràgraf amb una vora <em>inset</em></p>    
+</div>
+<div class="bloc">
+  <h2>Redimensió de caixes</h2>
+  <p class="redimensio redimensio1">Paràgraf que podem redimensionar horitzontalment.</p>
+  <p class="redimensio redimensio2">Paràgraf que podem redimensionar vericalment.</p>
+  <p class="redimensio redimensio3">Paràgraf que podem redimensionar horitzontalment i
+  verticalment.</p>
+</div>
+</body>
+</html>

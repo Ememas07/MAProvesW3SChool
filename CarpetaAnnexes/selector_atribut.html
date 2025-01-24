@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Selectors d'atribut</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+   img[title] { margin-right:2em; }
+   img[title="river"] { margin-right:4em; }
+   img[title][class="preferent"] { margin-right:6em; }
+   img[alt~="Riu"] { border: solid; }
+   p[lang|="en"] { font-family: "Times New Roman", serif }
+   img{ border: thin dotted black; }
+  </style>
+</head>
+<body>
+  <div><img src="imatges/river.png" alt="River" />Imatge sense títol</div>
+  <div><img src="imatges/river.png" alt="River" title="riv" />Imatge amb títol</div>
+  <div><img src="imatges/river.png" alt="River" title="river" />Imatge amb títol "logo"</div>
+  <div><img src="imatges/river.png" alt="River" title="riv" class="preferent" />Imatge amb títol i
+  classe "preferent"</div>
+  <div><img src="imatges/river.png" alt="Riu Muntanyes" />Imatge amb text alternatiu "Riu Muntanyes"</div>
+  <p>Paràgraf normal.</p>
+  <p lang="en-US">Paragraph in English</p>
+</body>
+</html>

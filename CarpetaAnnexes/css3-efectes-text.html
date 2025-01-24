@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Efectes de text amb CSS3</title>
+<style type="text/css">
+   div.bloc { border-color: #E69268; clear:both; }
+   h1 { background-color: #E69268; }
+   h2 { color: #E69268; }
+   p {
+      border: 2px #E69268 solid;
+      padding: 25px;
+      width: 25%;
+      margin-right: 50px;
+      float: left;
+   }
+   p.ombra {
+      font-size: 1.5em;
+   }
+   p.ombra1 {
+   	text-shadow: 5px 10px; 
+   }
+   p.ombra2 {
+   	text-shadow: 5px 10px 1px gray; 
+   }
+   p.tall {
+   	word-wrap: break-word;
+   }
+   p.desbordament {
+      overflow: hidden;
+   }
+   p.desbordament1 {
+   	text-overflow: clip;
+   }
+   p.desbordament2 { 
+   	text-overflow: ellipsis;
+   }   
+</style>
+</head>
+<body>
+<h1>Efectes de text amb CSS3</h1>
+<div class="bloc">
+  <h2>Ombres</h2>
+  <p class="ombra ombra1">Text amb ombra.</p>
+  <p class="ombra ombra2">Text amb ombra borrosa i color.</p>
+</div>
+<div class="bloc">
+  <h2>Tall de paraules</h2>
+  <p class="tall">Text amb una paraula llaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarga.</p>
+  <p>Text amb una paraula llaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarga.</p>
+</div>
+<div class="bloc">
+  <h2>Desbordament de text</h2>
+  <p class="desbordament desbordament1">Text amb una paraula llaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarga.</p>
+  <p class="desbordament desbordament2">Text amb una paraula llaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarga.</p>
+</div>
+</body>
+</html>

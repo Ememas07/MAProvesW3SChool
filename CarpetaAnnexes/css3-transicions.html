@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Transicions</title>
+<style type="text/css">
+   div.bloc { border-color: #44D084; clear:both; }
+   h1 { background-color: #44D084; }
+   h2 { color: #44D084; }
+   .canvimida{
+   	border: 2px #44D084 solid;
+      width: 25%;
+      float: left;
+      overflow: hidden;
+      height: 1em;
+   	-moz-transition: height linear 2s;
+   	-webkit-transition: height linear 2s;
+   	-o-transition: height linear 2s;
+   	transition: height linear 2s;
+   } 
+   .canvimida:hover {
+   	height: 10em;
+   }   
+   .canvimida p, .canvimida h2{
+   	margin: 0;
+   	padding: 0;
+   }
+   .canvimida h2{
+   	font-size: 1em;
+   	background-color: #44D084;
+   	color: black;   	
+   	font-weight: bold;
+   	text-align: center;
+   }
+	.canvicolor {
+		border: 2px #44D084 solid;
+      width: 25%;            
+      height: 3em;
+      text-align: center;
+      color: white;
+      margin-bottom: 2em;
+      background-color: #44D084;
+   	-moz-transition: color ease-out 1s;
+   	-webkit-transition: color ease-out 1s;
+   	-o-transition: height ease-out 1s;
+   	transition: height ease-out 1s;
+   	-moz-transition: background-color ease-out 1s;
+   	-webkit-transition: color ease-out 1s;
+   	-o-transition: height ease-out 1s;
+   	transition: height ease-out 1s;
+	}   
+	.canvicolor:hover{
+	   color: #44D084;
+	   background-color: white;
+	}	   
+</style>
+</head>
+<body>
+<h1>Transformacions 2D</h1>
+<div class="bloc">
+   <div class="canvicolor">
+      <h3>Títol</h3>
+   </div>    
+</div>
+<div class="bloc">
+   <div class="canvimida">
+      <h2>Ítem 1</h2>
+      <p>Explicació de l'ítem 1 amb text i tot allò que volguem</p>
+   </div>    
+   <div class="canvimida">
+      <h2>Ítem 2</h2>
+      <p>Explicació de l'ítem 2 amb text i tot allò que volguem</p>
+   </div>
+   <div class="canvimida">
+      <h2>Ítem 3</h2>
+      <p>Explicació de l'ítem 3 amb text i tot allò que volguem</p>
+   </div>
+</div>
+</body>
+</html>

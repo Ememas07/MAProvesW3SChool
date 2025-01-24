@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Colors i fons</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="estils/exemplescss.css" type="text/css" rel="stylesheet" />
+  <style type="text/css">
+    h1 { background-color:#8B0000;}
+    h2 { color:#8B0000;}
+    div.bloc {border-color: #8B0000;}
+    body { background: url(imatges/firefox.png) fixed no-repeat 97% 97%; }
+    p.ele1 { color: blue; }
+    p.ele2 { color: #8B0000; }
+    p.ele3 { color: rgb(127,255,0); }
+    p.ele4 { background-color: blue; }
+    p.ele5 { background-color: #8B0000; color:white; }
+    p.ele6 { background-color: rgb(127,255,0); }
+    p.ele7 { background-image: url(imatges/firefox-transparent.png) }
+    p.ele8 { background-image: url(imatges/firefox-transparent.png); background-repeat: repeat; }
+    p.ele9 { background-image: url(imatges/firefox-transparent.png); background-repeat: no-repeat; }
+    p.ele10 { background-image: url(imatges/firefox-transparent.png); background-repeat: repeat-x; }
+    p.ele11 { background-image: url(imatges/firefox-transparent.png); background-repeat: repeat-y; }
+    div.ele12 { height:3em; overflow:auto; margin-top:1em; }
+    p.ele13 { background-image: url(imatges/firefox-transparent.png); background-attachment:scroll;
+    background-repeat: no-repeat;margin:0; }
+    p.ele14 { background-image: url(imatges/firefox-transparent.png); background-repeat: no-repeat;
+    background-position: center top; }
+    p.ele15 { background-image: url(imatges/firefox-transparent.png); background-repeat: no-repeat;
+    background-position: 95% 80%; }
+    p.ele16 { background: #AFABFF url(imatges/firefox.png) no-repeat center 5%; padding-top:1.2em; }
+  </style>
+</head>
+<body>
+<h1>Colors i fons</h1>
+<div class="bloc">
+  <h2>color</h2>
+  <p class="ele1">Paràgraf amb lletra blava (blue).</p>
+  <p class="ele2">Paràgraf amb lletra de color #8B0000.</p>
+  <p class="ele3">Paràgraf amb lletra de color rgb(127,255,0).</p>
+</div>
+<div class="bloc">
+  <h2>background-color</h2>
+  <p class="ele4">Paràgraf amb fons blau (blue).</p>
+  <p class="ele5">Paràgraf amb fons de color #8B0000 (i lletra blanca).</p>
+  <p class="ele6">Paràgraf amb fons de color rgb(127,255,0).</p>
+</div>
+<div class="bloc curt">
+  <h2>background-image</h2>
+  <p class="ele7">Paràgraf amb imatge de fons el logotip de Firefox. Per defecte, el logotip es
+  repeteix per tota la caixa que ocupa el paràgraf.</p>
+</div>
+<div class="bloc llarg">
+  <h2>background-repeat</h2>
+  <p class="ele8">Paràgraf amb imatge de fons el logotip de Firefox. La imatge es repeteix tant
+  horitzontalment com verticalment (repeat).</p>
+  <p class="ele9">Paràgraf amb imatge de fons el logotip de Firefox. La imatge no es repeteix.</p>
+  <p class="ele10">Paràgraf amb imatge de fons el logotip de Firefox. La imatge es repeteix només
+  horitzontalment.</p>
+  <p class="ele11">Paràgraf amb imatge de fons el logotip de Firefox. La imatge es repeteix només
+  verticalment.</p>
+</div>
+<div class="bloc">
+  <h2>background-attachment</h2>
+  <div class="ele12">
+    <p class="ele13">Paràgraf amb fixació d'imatge tipus scroll. Quan avanço en el paràgraf, la
+    imatge avança amb mi, "m'acompanya" en el desplaçament vertical.</p>
+  </div>
+  <p>Com a exemple de fixació de tipus fixed, podeu observar la imatge del logotip de Firefox que hi
+  ha a la part inferior dreta d'aquesta finestra. Si us desplaceu, la imatge es manté fixada.</p>
+</div>
+<div class="bloc">
+  <h2>background-position</h2>
+  <p class="ele14">Paràgraf amb imatge de fons el logotip de Firefox. La imatge apareix a dalt
+  centrada (center top).</p>
+  <p class="ele15">Paràgraf amb imatge de fons el logotip de Firefox. La imatge apareix a la posició
+  95% (eix x) 80% (eix y).</p>
+</div>
+<div class="bloc">
+  <h2>background</h2>
+  <p class="ele16">Paràgraf amb color de fons #AFABFF amb imatge de fons el logotip de Firefox. La
+  imatge no es repeteix i apareix a dalt (5%) i centrada.</p>
+</div>
+</body>
+</html>

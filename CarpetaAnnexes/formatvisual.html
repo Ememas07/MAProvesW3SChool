@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Format Visual</title>
+	<style>
+		div.bloc {
+		   border: 2px solid #DAA520;
+		   margin: 10px;
+		}
+
+		#elem2 {
+		   position:relative;
+		   top: 2em;
+		   left: 10em;
+		   width: 400px;
+		   border: 1px solid red;
+		}
+
+		#elem3 {
+		   position:absolute;
+		   top: 220px;
+		   left: 25em;
+		   border: 2px solid green; 
+		}
+
+		#elem4 {
+		   position:fixed;
+		   top:70%;
+		   left:70%;
+		   width:8em;
+		   height:3em;
+		   padding:0.5em;
+		}
+
+		#elem5 {
+		   width:15em;
+		   height:3em;
+		   background-color:#DAA;
+		}
+	</style>
+</head>
+<body>
+	<div class="bloc">
+	   <h2>position, top, left, right, bottom</h2>
+	   <p>1er paràgraf normal</p>
+	   <p id="elem2">2n paràgraf amb posicionament relatiu. L'espai que ocuparia aquest paràgraf es manté.</p>
+	   <p id="elem3">3r paràgraf amb posicionament absolut. No es manté cap espai en el seu lloc original.</p>
+	   <p>4t paràgraf normal</p>
+	</div>
+	<div class="bloc" id="elem4">
+	   Aquest text té posició fixa.
+	</div>
+	<div class="bloc">
+	   <h2>height, width</h2>
+	   <p id="elem5">Paràgraf amb amplada 15em i alçada 3em. Si el text és llarg, surt de la seva caixa...</p>
+	</div>
+
+
+</body>
+</html>

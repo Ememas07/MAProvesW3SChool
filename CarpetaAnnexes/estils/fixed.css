@@ -1,0 +1,69 @@
+/* importem totes les característiques de la maquetació sense taules */
+@import url("sense_taules.css");
+
+/* Les següents propietats s'afegiran o sobreescriuran a les existents a sense_taules.css */
+
+#cap {
+   /* Posició fixada*/
+   position: fixed;
+   /* Posició de la capçalera: la posem a dalt de tot */
+   top: 0;
+   /* Mides de la capçalera */
+   width: 80%;
+   height: 25%;
+   /* Si el text sobrepassa l'alçada de la capçalera quedarà ocult */
+   overflow:hidden;
+}
+
+#peu {
+   /* Posició fixada*/
+   position: fixed;
+   /* Posició del peu de pàgina */
+   top: 90%;
+   /* Mides del peu de pàgina */
+   width: 80%;
+   /* Si el text sobrepassa el peu de pàgina quedarà ocult */
+   overflow:hidden;
+}
+
+#lateral {
+   /* Posició fixada*/
+   position: fixed;
+   /* Posició de la columna esquerra, coincideix amb l'alçada de la capçalera */
+   top: 25%;
+   /* Mides de la columna esquerra */
+   width: 12%;
+   height: 65%;
+   /* Si el text sobrepassa l'alçada de la columna quedarà ocult */
+   overflow:hidden;
+   /* Color de fons */
+   background-color:white;
+}
+
+#cos {
+   /* Posició fixada*/
+   position: fixed;
+   /* Posició del cos, coincideix amb l'alçada de la capçalera */
+   top: 25%;
+   /* Posicionem a 10% (marg esquerre del contenidor) + 12% (amplada columna esquerra)*/
+   left: 22%;   
+   /* Establim marge i farciment */
+   margin-left: 0%;
+   padding-left: 1%;
+   /* Mides del cos. */ 
+   /* L'amplada: 67% + 1% (padding) + 12% (columna esquerra) = 80% (amplada total del conteidor) */
+   width: 67%;
+   height: 65%;   
+   /* Si el text sobrepassa l'alçada del cos de la web quedarà ocult */
+   overflow:hidden;
+   /* Color de fons */
+   background-color:white;
+}
+
+
+#cos>div{
+   /* Els <div> de dins el cos ocuparan tota l'alçada possible */
+   height: 100%;
+   /* Si el text sobrepassa l'alçada del <div> apareixerà una barra de desplaçament */
+   overflow:auto;
+}

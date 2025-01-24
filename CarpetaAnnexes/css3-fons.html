@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Fons amb CSS3</title>
+<style type="text/css">
+   div.bloc { border-color: #8246D2; clear:both; }
+   h1 { background-color: #8246D2; }
+   h2 { color: #8246D2; }
+   p {
+      border: 2px #8246D2 solid;
+      padding: 25px;
+      width: 25%;
+      margin-right: 50px;
+      float: left;
+      background-image: url(imatges/linux.png);
+   	background-repeat: no-repeat;    
+   }
+   p.fons1 {
+   	background-size: 25px 50px; 
+   }
+   p.fons2 {
+   	background-size: 50px 50px; 
+   }
+   p.fons3 {
+   	background-size: cover; 
+   }
+   p.fons4 {
+   	background-size: contain; 
+   }
+   p.orig{
+      background-image: url(imatges/firefox.png);
+      border-width: 10px;
+      background-size: 50px 50px; 
+   }
+   p.orig1 {
+   	background-origin: border-box; 
+   }   
+   p.orig2 {
+   	background-origin: padding-box;
+   }
+   p.orig3 {
+   	background-origin: content-box;
+   }
+   p.multiplesimatges {
+   	background-image:  url(imatges/linux.png), url(imatges/firefox.png);
+   }   
+</style>
+</head>
+<body>
+<h1>Fons amb CSS3</h1>
+<div class="bloc">
+  <h2>Mides imatge de fons</h2>
+  <p class="fons1">Imatge de fons de 25px d'amplada i 50px d'alçada</p>
+  <p class="fons2">Imatge de fons de 50px d'amplada i alçada</p>
+  <p class="fons3">Imatge de fons que cobreix tot l'element.</p>  
+  <p class="fons4">Imatge de fons el màxim de gran per tal de poder-la veure sencera.</p>    
+</div>
+<div class="bloc">
+  <h2>Posicionament imatge</h2>
+  <p class="orig orig1">Paràgraf amb imatge a la vora.</p>      
+  <p class="orig orig2">Paràgraf amb imatge al farciment.</p>
+  <p class="orig orig3">Paràgraf amb imatge en el contingut de l'element.</p>
+</div>
+<div class="bloc">
+  <h2>Múltiples imatges de fons</h2>
+  <p class="multiplesimatges">Paràgraf amb dos imatges de fons</p>    
+</div>
+</body>
+</html>
