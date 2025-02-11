@@ -1,0 +1,4 @@
+<div class="control-group">
+    <input type="range" id="front-pressure" class="slider" min="@Model.SetupConfig.PressureMinFront" max="@Model.SetupConfig.PressureMaxFront" step="0.1" value="@Model.CarSetup.BasicSetup.Tyres.TyrePressure.First()">
+    <input type="number" id="front-pressure-value" class="value" min="@Model.SetupConfig.PressureMinFront" max="@Model.SetupConfig.PressureMaxFront" step="0.1" value="@Model.CarSetup.BasicSetup.Tyres.TyrePressure.First()">
+</div>

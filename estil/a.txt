@@ -1,0 +1,44 @@
+    <div class="slider-group">
+        <label for="p-fr-pressure">Front Right Tyre Pressure (PSI):</label>
+        <div class="control-group">
+            <input type="range" id="p-fr-pressure" class="slider" min="@Model.SetupConfig.PressureMinFront" max="@Model.SetupConfig.PressureMaxFront" value="@Model.CarSetup.BasicSetup.Tyres.TyrePressure.First()">
+            <input type="number" id="p-fr-pressure-value" class="value" min="@Model.SetupConfig.PressureMinFront" max="@Model.SetupConfig.PressureMaxFront" value="@Model.CarSetup.BasicSetup.Tyres.TyrePressure.First()">
+        </div>
+    </div>
+    <div class="slider-group">
+        <label for="p-fl-pressure">Front Left Tyre Pressure (PSI):</label>
+        <div class="control-group">
+            <input type="range" id="p-fl-pressure" class="slider" min="@Model.SetupConfig.PressureMinFront" max="@Model.SetupConfig.PressureMaxFront" value="@Model.CarSetup.BasicSetup.Tyres.TyrePressure.First()">
+            <input type="number" id="p-fl-pressure-value" class="value" min="@Model.SetupConfig.PressureMinFront" max="@Model.SetupConfig.PressureMaxFront" value="@Model.CarSetup.BasicSetup.Tyres.TyrePressure.First()">
+        </div>
+    </div>
+    <div class="slider-group">
+        <label for="p-rr-pressure">Rear Right Tyre Pressure (PSI):</label>
+        <div class="control-group">
+            <input type="range" id="p-rr-pressure" class="slider" min="@Model.SetupConfig.PressureMinFront" max="@Model.SetupConfig.PressureMaxFront" value="@Model.CarSetup.BasicSetup.Tyres.TyrePressure.First()">
+            <input type="number" id="p-rr-pressure-value" class="value" min="@Model.SetupConfig.PressureMinFront" max="@Model.SetupConfig.PressureMaxFront" value="@Model.CarSetup.BasicSetup.Tyres.TyrePressure.First()">
+        </div>
+    </div>
+    <div class="slider-group">
+        <label for="p-rl-pressure">Rear Left Tyre Pressure (PSI):</label>
+        <div class="control-group">
+            <input type="range" id="p-rl-pressure" class="slider" min="@Model.SetupConfig.PressureMinFront" max="@Model.SetupConfig.PressureMaxFront" value="@Model.CarSetup.BasicSetup.Tyres.TyrePressure.First()">
+            <input type="number" id="p-rl-pressure-value" class="value" min="@Model.SetupConfig.PressureMinFront" max="@Model.SetupConfig.PressureMaxFront" value="@Model.CarSetup.BasicSetup.Tyres.TyrePressure.First()">
+        </div>
+    </div>
+    
+    <div class="slider-group">
+        <label for="p-front-pads">Front Pads:</label>
+        <div class="control-group">
+            <input type="range" id="p-front-pads" class="slider" min="@Model.SetupConfig.FrontPadsMin" max="@Model.SetupConfig.FrontPadsMax" value="50">
+            <input type="number" id="p-front-pads-value" class="value" min="@Model.SetupConfig.FrontPadsMin" max="@Model.SetupConfig.FrontPadsMax" value="50">
+        </div>
+    </div>
+    <div class="slider-group">
+        <label for="p-rear-pads">Rear Pads:</label>
+        <div class="control-group">
+            <input type="range" id="p-rear-pads" class="slider" min="@Model.SetupConfig.RearPadsMin" max="@Model.SetupConfig.RearPadsMax" value="50">
+            <input type="number" id="p-rear-pads-value" class="value" min="@Model.SetupConfig.RearPadsMin" max="@Model.SetupConfig.RearPadsMax" value="50">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+html{
+    background-color: aqua;
+}
+
+section{
+
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 50%;
+    margin-right: 4%;
+    background-color: red;
+    overflow: auto;
+}
+header{
+    width:100%;
+    background-color:red;
+}
+aside{
+    background-color: green;
+margin-right: 80%;
+}
