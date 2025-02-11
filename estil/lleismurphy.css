@@ -23,7 +23,7 @@ p{
     width:30%
 }
 
-.p1{
+#p1{
     text-align: center;
     background-color:aqua;
     left:10%;
@@ -31,37 +31,37 @@ p{
     top:5vh;
     width:80%;
 }
-.p2{
+#p2{
     text-align: left;
     background-color:pink;
     left:10%;
-    top:10vh;
+    top:25vh;
     text-align: left;
 }
-.p3{
+#p3{
     background-color:blueviolet;
     left: 60%;
-    top:250px;
-    text-align: right;;
+    top:25vh;
+    text-align: right;
 }
-.p4{
+#p4{
     text-align: center;
     background-color:orange;
     left:35%;
-    top:400px;
+    top:40vh;
     z-index:1
 }
-.p5{
+#p5{
     background-color:red;
     left:10%;
-    top:550px;
+    top:60vh;
     text-align: left;
 }
-.p6{
+#p6{
     text-align: right;
     background-color:lime;
     left:60%;
-    top:550px;
+    top:60vh;
 }
 p:hover{
     z-index: 2;
